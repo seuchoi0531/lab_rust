@@ -1,0 +1,21 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "chapter01/learn01/Cargo.toml",
+    "chapter01/learn02/Cargo.toml",
+    "chapter01/learn03/Cargo.toml",
+    "chapter01/learn04/Cargo.toml",
+    "chapter01/learn05/Cargo.toml",
+    "chapter01/learn06/Cargo.toml",
+    "chapter01/learn07/Cargo.toml",
+    "chapter01/learn08/Cargo.toml",
+    "chapter01/learn09/Cargo.toml",
+    "chapter01/learn10/Cargo.toml",
+    "chapter02/learn01/Cargo.toml",
+    "chapter02/learn02/Cargo.toml",
+    "chapter02/learn03/Cargo.toml",
+    "chapter02/learn04/Cargo.toml",
+    "chapter02/learn05/Cargo.toml",
+    "chapter02/learn06/Cargo.toml",
+    "chapter02/learn07/Cargo.toml"
+  ]
+}
