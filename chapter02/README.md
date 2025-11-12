@@ -1,4 +1,7 @@
-## 02-01
+02-01
+===
+https://tourofrust.com/14_ko.html
+
 조건문은 다른 언어에서 많이 본 `if`, `else if`, `else`를 사용해서 작성
 조건문의 조건 부분은 괄호를 사용하지 않고 작성
 조건문의 실행 부분은 중괄호를 사용해서 작성
@@ -17,9 +20,10 @@ if x < 42 {
 다른 언어에서 많이 본 관계 연산자와 논리 연산자를 그대로 사용함
 - `==`, `!=`, `<`, `>`, `<=`, `>=`, `!`, `||`, `&&`
 
-https://tourofrust.com/14_ko.html
----
-## 02-02
+02-02
+===
+https://tourofrust.com/15_ko.html
+
 무한 반복문은 `loop` 키워도로 작성함
 ```
 loop {
@@ -29,16 +33,19 @@ loop {
 
 무한 반복문을 탈출하기 위해서는 `break` 키워드 사용
 
-https://tourofrust.com/15_ko.html
----
-## 02-03
+02-03
+===
+https://tourofrust.com/16_ko.html
+
 반복문은 다른 언어에서와 마찬가지로 `while` 키워드로 작성함
 `while`도 조건문과 마찬가지로 `()`를 사용하지 않고 조건 작성
 조건이 `false`일 때 반복문이 멈춤
 
-https://tourofrust.com/16_ko.html
----
-## 02-04
+
+02-04
+===
+https://tourofrust.com/17_ko.html
+
 반복문은 `for` 키워드로도 작성가능
 `for`은 얼마나 반복하는 범위를 명시해야 함
 반복하는 범위는 `x in n..m`와 같은 형태로, `in` 키워드를 사용하여 작성
@@ -69,9 +76,10 @@ for x in 0..=5 {
 // 5
 ```
 
-https://tourofrust.com/17_ko.html
----
-## 02-05
+02-05
+===
+https://tourofrust.com/18_ko.html
+
 다른 언어에서의 `switch`와 유사한 `match` 키워드를 이용해서 Rust만의 독창적인 조건문 사용
 
 `match` 구문의 형식은 아래와 같음
@@ -118,9 +126,11 @@ match x % 2 {
   }
 }
 ```
-https://tourofrust.com/18_ko.html
----
-## 02-06
+
+02-06
+===
+https://tourofrust.com/19_ko.html
+
 `loop` 문에서 `break`와 동시에 값을 반환할 수 있음
 ```
 let x = 1;
@@ -133,9 +143,11 @@ let v = loop {
 println!("{}", v); // 13
 ```
 
-https://tourofrust.com/19_ko.html
----
-## 02-07
+
+02-07
+===
+https://tourofrust.com/20_ko.html
+
 Rust에서 `{}`으로 감싸져 있는 부분을 *"블록"*이라고 함
 블록에서 무언가를 반환할 때 꼭 `return` 키워드를 사용하지 않아도 반환할 수 있음
 구문에 `;`가 없으면 그 값을 블록의 반환 값으로 간주함
@@ -175,5 +187,3 @@ fn add4(a: i32) -> i32 {
     a + 4
 }
 ```
-
-https://tourofrust.com/20_ko.html

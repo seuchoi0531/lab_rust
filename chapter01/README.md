@@ -1,13 +1,18 @@
-## 01-01
+01-01
+===
+https://tourofrust.com/02_ko.html
+
 Rust는 `.rs` 확장자를 가진 파일을 `rustc [파일명].rs` 명령어로 컴파일 해서 `[파일명].exe` 파일과 `[파일명].pdb` 파일을 얻는다.
 이렇게 컴파일 한 파일을 실행하면, `.rs` 파일의 `main` 함수가 첫 번째로 실행된다.
 
 `fn`으로 함수라는 것을 알려주고, `main`으로 함수명을 알려주고, `()`로 인자를, `{}`로 함수 `body` 구역을 정한다.
 `println!`로 출력을 할 수 있고, `println!`는 함수여서 인자로 문자열을 받는다.
 
-https://tourofrust.com/02_ko.html
----
-## 01-02
+
+01-02
+===
+https://tourofrust.com/03_ko.html
+
 변수는 `let`으로 선언한다.
 선언한 변수는 99% 확률로  유추
 만약에 유추가 안되면 타입 지정 가능
@@ -25,9 +30,11 @@ println!("{}", x); // 3.3
 
 변수명은 언제나 `snake_case`여야 함
 
-https://tourofrust.com/03_ko.html
----
-## 01-03 
+
+01-03 
+===
+https://tourofrust.com/04_ko.html
+
 Rust에는 값의 변경 여부가 굉장히 중요함
 
 변경 가능한*(mutable)* 값은 컴파일러가 변수에 값을 할당하는 것을 허용함
@@ -41,9 +48,11 @@ let mut x = 42;
 하지만 기본적으로 변수가 선언됐을 때 재할당 가능하므로, `mut` 키워드는 없어도 됨
 `mut` 키워드를 사용하게 되면 warning: variable does not need to be mutable 발생
 
-https://tourofrust.com/04_ko.html
----
-## 01-04
+
+01-04
+===
+https://tourofrust.com/05_ko.html
+
 Rust에는 자료형이 8가지 있음
 - 부울 타입: 참/거짓. `true`와 `false`
   - `bool`
@@ -79,9 +88,11 @@ let array = [13, "as"];
 // expected integer, found `&str`
 ```
 
-https://tourofrust.com/05_ko.html
----
-## 01-05
+
+01-05
+===
+https://tourofrust.com/06_ko.html
+
 숫자 타입을 다룰 때는 주의해야 함
 타입이 같아야만 연산이 가능하기 때문에, `u32`와 `u8`을 더할 수 없음
 
@@ -96,9 +107,11 @@ let c = a as u32 + b; // u32 = u32 + u32
 
 `bool` 타입은 숫자 타입으로 변환하면 `true`는 `1`, `false`는 `0`으로 변환함
 
-https://tourofrust.com/06_ko.html
----
-## 01-06
+
+01-06
+===
+https://tourofrust.com/07_ko.html
+
 상수는 `const` 키워드로 선언할 수 있음
 상수는 반드시 명시적으로 타입을 지정해야 함
 상수를 꼭 함수 외부에 정의할 필요는 없음
@@ -107,9 +120,11 @@ https://tourofrust.com/06_ko.html
 
 상수명은 `SCREAMING_SNAKE_CASE`로 지음
 
-https://tourofrust.com/07_ko.html
----
-## 01-07
+
+01-07
+===
+https://tourofrust.com/08_ko.html
+
 배열(array)는 고정된 길이를 갖고, 모두 같은 타입의 collection.
 자료형은 `[T:N]` 꼴로 표현하고, `T`는 타입, `N`은 길이
 
@@ -117,9 +132,11 @@ https://tourofrust.com/07_ko.html
 
 배열 전체를 출력하기 위해선 `{:?}`을 사용하는 듯 함
 
-https://tourofrust.com/08_ko.html
----
-## 01-08
+
+01-08
+===
+https://tourofrust.com/09_ko.html
+
 함수는 0개 이상의 인자를 가짐
 인자의 타입을 반드시 명시해야 하고, 함수가 반환한다면 반환하는 타입도 명시해야 함
 반환하는 타입을 명시할 때는 `->`를 이용해서 명시
@@ -134,9 +151,11 @@ fn add(x: i32, y: i32) -> i32 {
 
 함수명은 `snake_case`로 지음
 
-https://tourofrust.com/09_ko.html
----
-## 01-09
+
+01-09
+===
+https://tourofrust.com/10_ko.html
+
 함수가 튜플(tuple)을 반환함으로써 여러 개의 값을 반환할 수 있음
 다르게 말하면, 여러 개의 값을 반환하고 싶으면 튜플을 사용하면 됨
 
@@ -156,14 +175,14 @@ println!("{} {} {}", a, b, c);
 데이터터 구조의 일부분을 편하게 추출할 수 있도록 해주는 다양한 형태의 분해(destructuring) 방법이 있음
 
 
-https://tourofrust.com/10_ko.html
----
-## 01-10
+
+01-10
+===
+https://tourofrust.com/11_ko.html
+
 함수가 아무것도 반환하지 않는 경우, 빈 `tuple`을 반환함
 이런 빈 `tuple`을 `unit`이라고도 함
 
 빈 `tuple`은 당연하게도 `()`로 표현함
 `()`를 사용하게 되는 경우는 거의 없지만 꽤 자주 마주치게 되니 알아둬야 함
 함수에서 반환값이나 타입으로 `()`를 명시하지 않아도 암시적으로 `()`로 추론
-
-https://tourofrust.com/11_ko.html
