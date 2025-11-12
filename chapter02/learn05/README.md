@@ -44,5 +44,5 @@ match x % 2 {
     println!("x % 2 = {}", oddrest);
   }
 }
-
+```
 https://tourofrust.com/18_ko.html
